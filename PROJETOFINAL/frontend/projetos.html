@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Projetos</title>
+    <link rel="stylesheet" href="css/projetos.css">
+</head>
+<body>
+    <main>
+        <h1>Gerenciador de Projetos</h1>
+        <div class="form-container">
+            <h2>Criar / Editar Projeto</h2>
+            <form id="projetoForm">
+                <input type="hidden" id="projetoId">
+
+                <label for="descricao">Nome:</label>
+                <input type="text" id="nome" placeholder="Insira o nome do projeto" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="3" placeholder="Insira a descrição do projeto" required></textarea>
+                
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option value="Ativo">Ativo</option>
+                    <option value="Pausado">Pausado</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select>
+
+                <button type="submit">Salvar Projeto</button>
+                <button type="button" id="cancelarButton" class="hidden">Limpar Dados</button>
+            </form>
+        </div>
+        <div class="projects-list-container">
+            <h2>Projetos Cadastrados</h2>
+            <table id="projetosTabela">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="projetosTbody">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/projetos.js"></script>
+</body>
+</html>
