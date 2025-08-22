@@ -130,7 +130,3 @@ Abra o arquivo [frontend/index.html](frontend/index.html) no navegador ou utiliz
 - O frontend espera que o backend esteja rodando em `http://127.0.0.1:8000`.
 - O token JWT é salvo no `localStorage` e usado para acessar as páginas protegidas.
 - Para acessar a tela de projetos, é necessário estar autenticado.
-
----
-
-Desenvolvido
